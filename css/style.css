@@ -1,0 +1,980 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+*{
+    outline: none !important;
+    scroll-behavior: smooth;
+}
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*     A SIMPLE ADDITIONAL TOUCH - CHANGE IT IF YOU WANT UNDERLINED HYPERLINKS    */
+
+a{
+    text-decoration: none;
+}
+::placeholder{
+    color: black;
+    opacity: 1;
+}
+*{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+/*  NAVBAR SECTION                       */
+
+nav{
+    background-color: black;
+    height: 70px;
+    
+    /* 
+   -webkit-animation-name: example;
+   -webkit-animation-duration: 2s;
+    */
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: flex-end;
+    font-size: 40px;
+    padding: 10px 0px 0px 30px;
+    color: #007bff;
+}
+
+nav > .container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav > .container > div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+nav > .container > div > ul {
+    display: flex;
+    list-style: none
+}
+nav > .container > div > ul > li{
+   
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 25px;
+}
+nav > .container > div > ul > li > a {
+   color: #007bff;
+   
+}
+
+.cool-link:after{
+    content: ''; 
+    display: block;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: width .3s;
+}
+.cool-link:hover:after{
+    width: 100%;
+    transition: width .3s; 
+}
+
+.account{
+    font-size: 25px;
+    padding-right: 30px;
+}
+
+.account > a{
+    margin: 0px 5px;
+    color: #007bff;
+}
+
+form > .button {
+    font-size: 25px;
+    background-color: black;
+    border-radius: 5px;
+    padding-right: 15px;
+    color: #007bff;
+    border: none;
+}
+.popup-content > form > .button{
+    font-size: 25px;
+    background-color: black;
+    margin-top: -15px;
+    color: #007bff;
+    border: none;
+    border-radius: 30px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+.button:hover{
+    color: blue;
+}
+.popup{
+    background: rgba(0,0,0, 0.6);
+    width: 100%;
+    height: 100%;
+    left: 0vh;
+    position: fixed;
+    z-index: 2000;
+    top:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.popup-content{
+    height: 220px;
+    width: 450px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2000;
+}
+
+.popup-content > form > input{
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    padding: 8px;
+    border: 1px solid gray;
+    
+}
+
+.close{
+   position: absolute;
+   top: -25px;
+   right: -25px;
+   height: 20px;
+   widows: 20px;
+   border-radius: 50%;
+   box-shadow: 6px 6px 29px -4px rgba(0,0,0,0,0.75);
+   cursor: pointer;
+}
+
+.popup-content > p{
+    margin-top: 15px;
+}
+/*                       END NAVBAR SECTION                    */
+
+/*                      START INTRODUCTION DIV/SECTION                   */
+
+.yellow{
+    background-color: #D2D7DB;
+    height: 50vh;
+}
+.align-content{
+    background-color: transparent;
+    height: 50vh;
+    margin: 0% 5% 0% 5%;
+    display: flex;
+}
+.search-div{
+    margin: 110px 0px 0px 160px;
+}
+
+.search-div > h1{
+    font-size: 30px;
+    margin-left: -85px;
+}
+.search-form > div{
+    display: flex;
+    align-items: center;
+    height: 73px;
+}
+
+.search-form > .form-group > .form-control{
+    background: white;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,.2);
+    border-radius: 15px;
+    color: #000;
+    width: 390px;
+    height: 45px;
+    font-size: 25px;
+    margin-left: -100px;
+    box-shadow: 2px 5px 5px 5px rgba(0,0,0,0.1);
+    resize: none;
+}
+.search-form > div > button{
+}
+.search-form > div > textarea{
+   
+}
+
+.slideshow{
+    height: 400px;
+    overflow: hidden;
+}
+.middle{
+    position: absolute;
+    border-radius: 50px;
+    top:50%;
+    left:50%;
+    transform: translate(-20%,-90%);
+}
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.bar:hover{
+    background: #fff;
+}
+input[name='r']{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+#r5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+
+.gray{
+    background-color: #D2D7DB;
+    height: 55vh;
+}
+
+/*                      END INTRODUCTION DIV/SECTION                   */
+
+/*                     START REVIEW DIV/SECTION                  */
+
+.slider2-section{
+    background-color: #D2D7DB;
+    height: 50vh;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 5s;
+}
+
+#slider2{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+#slider2 input[type=radio]{
+    display: none;
+}
+#slider2 label {
+    cursor: pointer;
+    text-decoration: none;
+}
+#slides2{
+    padding: 10px;
+    background: transparent;
+    position: relative;
+    z-index: 100;
+ 
+}
+@keyframes slides-switch{
+    0% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: 0%;
+    }
+}
+#overflow{
+    width: 100%;
+    overflow: hidden;
+}
+#slide1:checked ~ #slides2 .inner{
+    margin-left: 0;
+}
+#slide2:checked ~ #slides2 .inner{
+    margin-left: -100%;
+}
+#slide3:checked ~ #slides2 .inner{
+    margin-left: -200%;
+}
+#slide4:checked ~ #slides2 .inner{
+    margin-left: -300%;
+}
+#slides2 .inner{
+    transition: margin-left 800ms cubic-bezier(0.770,0.000,0.175,1.000);
+    width: 400%;
+    height: 400px;
+}
+#slides2 .slide2{
+    width: 25%;
+    float: left;
+    height: 100%;
+    color: #fff;
+}
+
+
+#controls{
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50%;
+    z-index: 3;
+    position: relative;
+}
+#controls label{
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+}
+#controls label:hover{
+    opacity: 1;
+}
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    float: right;
+    margin: -50px -50px 0 0;
+    display: block;
+}
+#slide1:checked ~ #controls label:nth-last-child(1),
+#slide2:checked ~ #controls label:nth-last-child(4),
+#slide3:checked ~ #controls label:nth-last-child(3),
+#slide4:checked ~ #controls label:nth-last-child(2) {
+    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+    float: left;
+    margin: -50px 0 0 -50px;
+    display: block;
+}
+#bullets{
+    margin: 150px 0 0;
+    text-align: center;
+    display: none;
+}
+#bullets label{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ccc;
+    margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4){
+    background: #444;
+}
+@media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(1) {
+      margin: 0;
+   }
+   #slides {
+      max-width: calc(100% - 140px);
+      margin: 0 auto;
+   }
+}
+.slide-content{
+    display: flex;
+    height: inherit;
+}
+.slide_1 > .slide-content > .slide-content_image{
+    height: inherit;
+    background-color: blue;
+    width: 25%;
+    margin-top: 10px;
+    background-image:url("../images/seekers1.jpg");
+    background-size:cover;
+}
+.slide_2 > .slide-content > .slide-content_image{
+    height: inherit;
+    background-color: blue;
+    width: 25%;
+    background-image:url("../images/seekers2.jpg");
+    background-size:cover;
+}
+.slide_3 > .slide-content > .slide-content_image{
+    height: inherit;
+    background-color: blue;
+    width: 25%;
+    background-image:url("../images/seekers3.jpg");
+    background-size:cover;
+}
+.slide_4 > .slide-content > .slide-content_image{
+    height: inherit;
+    background-color: transparent;
+    width: 25%;
+    background-image:url("../images/seekers4.jpg");
+    background-size:cover;
+}
+.slide-content_text{
+    height: 100%;
+    background-color: transparent;
+    width: 75%;
+    line-height: 2;
+    padding: 8rem 3rem 0rem 3rem;
+    text-align: justify;
+    font-size:20px;
+    color: black;
+}
+.slide-content_text > p {
+    margin-top: 20px;
+    line-height: normal;
+}
+.slide-content_text > p >a{
+    color: black;
+}.slide-content_text > p >a > i{
+    padding-left: 20px;
+}
+.slide-content_text > p >a:hover{
+    color: #FFCC33;
+}
+/*                      END REVIEW DIV/SECTION                   */
+
+/*                     START CONTACT DIV/SECTION                  */
+
+.contact{
+    background-color: #D2D7DB;
+    text-align: center;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 3s;
+    border-bottom: 10px solid black;
+}
+.contact > .align-content-center{
+    background-color: transparent;
+    height: 50vh;
+    padding: 10px 0px;
+    border: 3px solid black;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.contact-title > h2, .contact-title > p{
+    padding: 0px 0px 10px 0px;
+}
+
+.contact-title > h2{
+    font-size: 40px;
+}
+
+.contact-title > p{
+    font-size: 25px;
+}
+
+.contact-form > .form-group {
+    margin-bottom: 1rem;
+}
+
+
+.contact .form-control{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,.2);
+    border-radius: 15px;
+    background: #FFF;
+    color: #000;
+    width: 390px;
+    height: 45px;
+    font-size: 25px;
+    box-shadow: 2px 5px 5px 5px rgba(0,0,0,0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.contact-form > .form-group > .textarea{
+    width: 390px;
+    height: 90px;
+    resize: none;
+}
+.contactSendButton{
+    cursor: pointer;
+    border: 2px solid #000;
+    color: #000;
+    background: #fff;
+    border-radius: 50px;
+    padding: 15px 50px;
+    font-size: 1.45rem;
+    outline: none;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.contact .form-control:hover, .contact .form-control:focus, .contact .form-control:active{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.contactSendButton:hover, .contactSendButton:focus, .contactSendButton:active{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+
+/*                      START GoTopBtn a href                 */
+
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 25px;
+  border-radius: 100%;
+  background-color: black;
+  z-index: 100;
+}+
+
+/*                      END GoTopBtn a href                   */
+
+/* Uncomment this when everything's ready. w 
+@-webkit-keyframes example {
+  0%   { opacity: 0;}
+  100% {opacity: 1;}
+}
+*/
+
+
+/*                      END CONTACT DIV/SECTION                   */
+
+/*                      START FOOTER DIV/SECTION                   */
+footer{
+    background-color: black;
+    height: 31vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+    
+}
+.footer-container{
+    padding-top: 15px;
+    width: 100%;
+    height: 30vh;
+    background: black;
+}
+.social-media{
+    display: inline-block;
+    width: 800px;
+    height: 250px;
+}
+
+.social-media > ul{
+    list-style: none;
+    font-size: 20px;
+    padding-right: 40%;
+}
+
+.social-media > ul > li{
+    padding-bottom: 25px;
+    text-align: center;
+}
+.social-media > ul > li > i{
+    padding-left: 5px;
+    color: #007bff;
+}
+
+.social-media > ul > li{
+    width: auto;
+    height: auto;
+    padding-top: 10px;
+    transition: width .5s, height .5s, transform .5s;
+}
+
+.social-media > ul > li:hover{
+    transform: scale(1.5,1.5);
+}
+
+.social-media > ul > li > a {
+    color: whitesmoke;
+}
+
+.google-maps{
+     display: inline-block;
+     width: 800px;
+     height: 250px;
+}
+/*                      END FOOTER DIV/SECTION                   */
+
+/*                      START EXPLORE DIV/SECTION                   */
+
+.card-middle{
+    position: absolute;
+    transform: translate(0%,0%);
+}
+.first-card{
+    cursor: pointer;
+    width: 320px;
+    height: 444px;
+    border: 12px solid transparent;
+}
+.second-card{
+    cursor: pointer;
+    width: 320px;
+    height: 444px;
+    border: 12px solid transparent;
+    transform: translate(200%,0%);
+}
+.third-card{
+    cursor: pointer;
+    width: 320px;
+    height: 444px;
+    border: 12px solid transparent;
+    transform: translate(380%,0%);
+}
+.front,.back{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+}
+.front img{
+    height: 100%;
+}
+.front{
+    transform:  perspective(600px) rotateY(0deg);
+}
+.back{
+    background: #F5F5F5;
+    transform:  perspective(600px) rotateY(180deg);
+}
+.back-content{
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+    top: 35%;
+    font-size: 25px;
+}
+.sm{
+    margin: 20px 0;
+}
+.sm a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+.sm a:hover{
+    background: #2c3e50;
+    color: white;
+}
+.first-card:hover  > .front{
+    transform:  perspective(600px) rotateY(-180deg);
+}
+.first-card:hover > .back{
+    transform:  perspective(600px) rotateY(0deg);
+}
+
+.second-card:hover > .front{
+    transform:  perspective(600px) rotateY(-180deg);
+}
+
+.second-card:hover > .back{
+    transform:  perspective(600px) rotateY(0deg);
+}
+.third-card:hover > .front{
+    transform:  perspective(600px) rotateY(-180deg);
+}
+
+.third-card:hover > .back{
+    transform:  perspective(600px) rotateY(0deg);
+}
+
+/*                      END EXPLORE DIV/SECTION                   */
+
+/*                      START MONTHLY-OFFERS DIV/SECTION                   */
+.paris-section{
+    height: 90vh;
+}
+.parallax {
+    min-height: 500px;
+    background: transparent;
+}
+.monthly-offer{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    
+    justify-content: space-around
+}
+
+.align-content-monthly{
+    background-color: transparent;
+    height: 90vh;
+    display: flex;
+}
+
+.monthly-offer > h2 , .monthly-offer > h3 {
+    font-size: 44px;
+    color: navajowhite;
+    margin: auto;
+    z-index: 100;
+}
+
+
+
+/*                      END MONTHLY-OFFERS DIV/SECTION                   */
+
+
+/*                      START OFFERS DIV/SECTION                   */
+
+.offer{
+    height: 48vh;
+    width: 400px;
+    margin: 12px 12px;
+    background: blue;
+}
+
+.text-offer{
+    text-align: center;
+    margin-top: 90%;
+}
+
+/*                      END OFFERS DIV/SECTION                   */
+
+
+/*                      START SIGNUP DIV/SECTION                   */
+
+
+.signUp-container{
+    margin-top: 80px;
+    margin-bottom: 103px;
+}
+.signUp-form{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.signUp-container > h1 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+}
+
+.signUp-form > input{
+    width: 90%;
+    height: 40px;
+    padding: 0px 5%;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #fff;
+    font-family: arial;
+    font-size: 16px;
+    color: #111;
+    line-height: 40px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.signUp-form > input:hover, .signUp-form > input:focus, .signUp-form > input:active{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.signUp-form > button{
+    display: block;
+    margin: 15px auto;
+    width: 30%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #222;
+    font-family: arial;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.signUp-form > button:hover, .signUp-form > button:focus, .signUp-form > button:active{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/*                      END SIGNUP DIV/SECTION                   */
+
+/*                      START AccountSettings DIV/SECTION                   */
+
+.account-settings{
+     background-color: transparent;
+    height: 59.9vh;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 7s;
+    border-bottom: 10px solid black;
+}
+
+/*                      END AccountSettings DIV/SECTION                   */
+
+
