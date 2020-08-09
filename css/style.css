@@ -106,7 +106,7 @@ a{
     opacity: 1;
 }
 *{
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
 }
 /*  NAVBAR SECTION                       */
 
@@ -125,20 +125,19 @@ nav{
     align-items: flex-end;
     font-size: 40px;
     padding: 10px 0px 0px 30px;
-    color: #007bff;
+    color: navajowhite;
 }
 
 nav > .container{
     display: flex;
     justify-content: space-between;
+    height: inherit;
+    background-color: #04080F;
     
 }
 
-nav > .container > div {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 20px 0px;
+nav > .container > div:nth-child(2) {
+    margin-top: 1.2rem;
 }
 
 nav > .container > div > ul {
@@ -146,22 +145,24 @@ nav > .container > div > ul {
     list-style: none
 }
 nav > .container > div > ul > li{
-   
     text-align: center;
     padding: 0px 10px;
     font-size: 25px;
 }
 nav > .container > div > ul > li > a {
-   color: #007bff;
-   
+   color: navajowhite;
 }
+nav > .container > div > ul > div > a:hover{
+    color:navajowhite;
+}
+
 
 .cool-link:after{
     content: ''; 
     display: block;
     width: 0;
     height: 2px;
-    background: red;
+    background: navajowhite;
     transition: width .3s;
 }
 .cool-link:hover:after{
@@ -176,7 +177,7 @@ nav > .container > div > ul > li > a {
 
 .account > a{
     margin: 0px 5px;
-    color: #007bff;
+    color: navajowhite;
 }
 
 form > .button {
@@ -184,9 +185,14 @@ form > .button {
     background-color: black;
     border-radius: 5px;
     padding-right: 15px;
-    color: #007bff;
+    color: navajowhite;
     border: none;
 }
+
+form > .button:hover{
+    color: navajowhite;
+}
+
 .popup-content > form > .button{
     font-size: 25px;
     background-color: black;
@@ -253,10 +259,14 @@ form > .button {
 
 /*                      START INTRODUCTION DIV/SECTION                   */
 
-.yellow{
+.search-section{
     background-color: #D2D7DB;
     height: 50vh;
+    animation-name: appear;
+    animation-duration: 4s;
+    animation-timing-function: ease;
 }
+
 .align-content{
     background-color: transparent;
     height: 50vh;
@@ -363,7 +373,7 @@ input[name='r']{
 }
 
 
-.gray{
+.moving-cards{
     background-color: #D2D7DB;
     height: 55vh;
 }
@@ -556,7 +566,7 @@ input[name='r']{
     background-color: transparent;
     width: 75%;
     line-height: 2;
-    padding: 8rem 3rem 0rem 3rem;
+    padding: 4rem 3rem 0rem 3rem;
     text-align: justify;
     font-size:20px;
     color: black;
@@ -883,13 +893,31 @@ footer{
 .offer{
     height: 48vh;
     width: 400px;
-    margin: 12px 12px;
+    margin: 5rem 12px;
     background: blue;
+    opacity: 0.7;
+    
+}
+.offer:hover{
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0,1,0,1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacity {
+  0%   {opacity: 0.7;
+        transform: scale(1);
+        }
+  100% {opacity: 1;
+        transform: scale(1.1);
+        }
 }
 
 .text-offer{
     text-align: center;
-    margin-top: 90%;
+    margin-top: -25%;
+    font-size: 21px;
 }
 
 /*                      END OFFERS DIV/SECTION                   */
@@ -899,8 +927,9 @@ footer{
 
 
 .signUp-container{
-    margin-top: 80px;
-    margin-bottom: 103px;
+    background-color: #D2D7DB;
+    padding-top: 80px;
+    padding-bottom: 51px;
 }
 .signUp-form{
     width: 400px;
@@ -977,4 +1006,28 @@ footer{
 
 /*                      END AccountSettings DIV/SECTION                   */
 
+.offer-section{
+    background-color: #D2D7DB;
+    height: 70vh;
+    padding-top: 3rem;
+}
 
+
+.section-parallax{
+    background-color: #D2D7DB;
+    height: 55vh;
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.view-button-offer_align{
+    margin-top: 29.7rem;
+    margin-left: 6rem;
+    font-size: 1rem;
+}

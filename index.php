@@ -5,7 +5,7 @@
     $query = mysqli_query($conn,$sql) or die(mysqli_error($conn));
 ?>
 
-<section class="yellow" id="home">
+<section class="search-section" id="home">
     <div class="align-content">
 
        
@@ -64,14 +64,14 @@
         </div>
 </section>
 
-<section class="gray">
-    <div class="parallax" data-parallax="scroll" data-z-index="100" data-image-src="images/parallax1.jpeg">
+<section class="section-parallax">
+    <div class="parallax" data-parallax="scroll" data-z-index="100" data-image-src="images/parallax4.jpeg">
         
     </div>
 </section>
 
 
-<section class="gray" id="explore">  
+<section class="moving-cards" id="explore">  
     <div class="align-content">
         
         
@@ -144,7 +144,7 @@
     </div>
 </section>
 
-<section class="yellow" id="adventure">
+<section class="offer-section" id="adventure">
     <div class="align-content">
         <?php
         while($row=mysqli_fetch_array($query)){
@@ -156,13 +156,16 @@
                 <h2><?php echo $row['time'];?></h2>
                 <h3><?php echo $row['price'];?> &euro;</h3>
             </div>
+            <form action="<?php echo "view.php?id=".$row['id']; ?>">
+            <input type="submit" class="contactSendButton view-button-offer_align" value="View" />
+            </form>
         </div>
     <?php } ?>
     </div>
 </section>
 
-<section class="gray">
-    <div class="parallax" data-parallax="scroll" data-z-index="100" data-image-src="images/parallax2.jpeg">
+<section class="section-parallax">
+    <div class="parallax" data-parallax="scroll" data-z-index="100" data-image-src="images/parallax5.jpeg">
         
     </div>
 </section>
