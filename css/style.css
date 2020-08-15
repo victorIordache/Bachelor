@@ -95,9 +95,7 @@ hr {
 input, select {
     vertical-align:middle;
 }
-
 /*     A SIMPLE ADDITIONAL TOUCH - CHANGE IT IF YOU WANT UNDERLINED HYPERLINKS    */
-
 a{
     text-decoration: none;
 }
@@ -197,7 +195,6 @@ form > .button:hover{
     font-size: 25px;
     background-color: black;
     margin-top: -15px;
-    color: #007bff;
     border: none;
     border-radius: 30px;
     width: 150px;
@@ -680,7 +677,7 @@ input[name='r']{
   height: 50px;
   background: transparent;
   bottom: 40px;
-  right: 50px;
+  right: 20px;
   text-decoration: none;
   text-align: center;
   line-height: 50px;
@@ -751,13 +748,15 @@ footer{
 }
 
 .social-media > ul > li > a {
-    color: whitesmoke;
+   color: navajowhite;
 }
 
 .google-maps{
      display: inline-block;
      width: 800px;
      height: 250px;
+     float: right;
+     margin: 15px 80px 0px 0px;
 }
 /*                      END FOOTER DIV/SECTION                   */
 
@@ -892,7 +891,7 @@ footer{
 
 .offer{
     height: 48vh;
-    width: 400px;
+    width: 310px;
     margin: 5rem 12px;
     background: blue;
     opacity: 0.7;
@@ -916,7 +915,7 @@ footer{
 
 .text-offer{
     text-align: center;
-    margin-top: -25%;
+    margin-top: -21%;
     font-size: 21px;
 }
 
@@ -997,7 +996,7 @@ footer{
 /*                      START AccountSettings DIV/SECTION                   */
 
 .account-settings{
-     background-color: transparent;
+    background-color: #D2D7DB;
     height: 59.9vh;
     -webkit-animation-name: example;
     -webkit-animation-duration: 7s;
@@ -1008,10 +1007,19 @@ footer{
 
 .offer-section{
     background-color: #D2D7DB;
-    height: 70vh;
     padding-top: 3rem;
+    max-width: 100%;
+    min-height: 68vh;
 }
-
+.align-content-grid{
+    background-color: transparent;
+    margin: 0% 5% 0% 5%;
+    display: grid;
+    grid-template-columns: repeat(5, 310px);
+    grid-template-rows: auto;
+    column-gap: 20px;
+    padding-bottom: 2rem;
+}
 
 .section-parallax{
     background-color: #D2D7DB;
@@ -1026,8 +1034,227 @@ footer{
         opacity: 1;
     }
 }
-.view-button-offer_align{
-    margin-top: 29.7rem;
-    margin-left: 6rem;
-    font-size: 1rem;
+.offers_buttons_position{
+    display: flex;
+    width: inherit;
+    margin-top: 29rem;
+    justify-content: center;
+    
+}
+.offers_buttons_position > div >a{
+    margin: 0px 5px;
+}
+.align-ifnot-logged{
+    margin-left: 6.5rem;
+}
+.offers_buttons_position > div > a > input{
+    cursor: pointer;
+    border: 2px solid #000;
+    color: #000;
+    background: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    outline: none;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+
+/*                      START VIEW-OFFER DIV/SECTION                   */
+
+.view-offer-section{
+    background-color: #D2D7DB;
+    padding-top: 1rem;
+    max-width: 100%;
+    min-height: 60vh;
+    padding-bottom: 1rem;
+}
+.view-offer{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin: 2rem 0 0 5rem;
+}
+
+.view-offer_image{
+    padding-left: 5rem;
+    width: 20%;
+}
+.view-offer_image > img{
+    width: 340px;
+}
+
+.view-offer_text{
+    padding: 5rem 10rem 0rem 3rem;
+    line-height: 1.3;
+    width: 70%;
+}
+.view-offer_text > h1{
+    font-size: 35px;
+
+}
+.view-offer_text p:first-of-type{
+    font-size:25px;
+    margin-bottom: 1.5rem;
+}
+.view-offer_text > p:nth-child(3){
+    margin-top: 3rem;
+    font-size: 20px;
+}
+.view-offer_text > form > button {  
+    float: right;
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+}
+
+/*                      END VIEW-OFFER DIV/SECTION                   */
+
+/*                      START UPLOAD-OFFER  DIV/SECTION                   */
+
+.upload-offer-section{
+    display: flex;
+    background-color: #D2D7DB;
+    height: 60.9vh;
+    text-align: center;
+}
+.upload-offer-content{
+    margin: 2rem auto;
+}
+.upload-offer-content > h1{
+    font-size: 30px;
+}
+
+.upload-offer-content >form{
+    margin-top: 3rem;
+}
+
+.upload-offer-content > form > div > input, .upload-offer-content > form > div > textarea{
+    width: 90%;
+    height: 40px;
+    padding: 0px 5%;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #fff;
+    font-family: arial;
+    font-size: 16px;
+    color: #111;
+    line-height: 40px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    border-radius: 10px;
+}
+.upload-offer-content > form > div > textarea{
+    height: 100px;
+    line-height: normal;
+    resize: none;
+}
+.upload-offer-content > form > div > input[type="submit"]{
+    width: 30%;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.upload-offer-content > form > div > input:hover, .upload-offer-content > form > div > input:focus, .upload-offer-content > form > div > input:active, .upload-offer-content > form > div > textarea:hover, .upload-offer-content > form > div > textarea:focus, .upload-offer-content > form > div > textarea:active{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*                      END UPLOAD-OFFER DIV/SECTION                   */
+
+.settings-section{
+    margin: 0 auto;
+    text-align: center;
+}
+.edit-offer{
+    display: flex;
+    padding: 2rem 0 2rem 0;
+    justify-content: space-evenly;
+    background-color: #D2D7DB;
+}
+.edit-offer > form > div > input:hover, .edit-offer > form > div > input:focus, .edit-offer > form > div > input:active, .edit-offer > form > div > textarea:hover, .edit-offer > form > div > textarea:focus, .edit-offer > form > div > textarea:active{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.edit-offer > form > div > input, .edit-offer > form > div > textarea{
+    width: 100%;
+    height: 40px;
+    padding: 0px 5%;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #fff;
+    font-family: arial;
+    font-size: 16px;
+    color: #111;
+    line-height: 40px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    border-radius: 10px;
+}
+.edit-offer > form {
+    text-align: center;
+    padding: 4rem 0 4rem 0;
+}
+.edit-offer > form > h1{
+    margin-bottom: 1rem;
+    font-size: 30px;
+}
+.edit-offer > form > div > input[type="submit"] {
+    width: 35%;
+}
+.edit-offer > form > div > textarea{
+    height: 100px;
+    resize:none;
+    line-height: normal;
+}
+
+/*                      START SEARCH-OFFERS DIV/SECTION                   */
+
+.search-page{
+    min-height: 60.9vh;
+    background-color: #D2D7DB;
+}
+
+/*                      END SEARCH-OFFERS DIV/SECTION                   */
+
+.offer-search{
+    display: flex;
+    max-width: 100%;
+    min-height: 55vh;
+    padding: 4rem 0 4rem 0;
+}
+.offer-search_image{
+    width: 20%;
+    margin: 0rem 2rem 0rem 2rem;
+}
+.offer-search_text{
+    width: 70%;
+    margin: 3rem 2rem 0rem 2rem;
+}
+.offer-search_text > h1{
+    font-size: 30px;
+    padding-bottom: 1rem;
+}
+.offer-search_text > p:first-of-type{
+    font-size: 25px;
+    padding-bottom: 1rem;
+}
+.offer-search_text > p {
+    font-size: 20px;
 }

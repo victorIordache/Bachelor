@@ -11,20 +11,20 @@
        
     <div class="search-div">
         <h1>Where do you wanna travel?</h1>
-            <form class="search-form" action="includes/search-form.php" method="POST">
-                <div class="form-group">
-
-                    <input type="text" name="country" class="form-control" placeholder="Country to visit">
-                </div>
+        <form class="search-form" action="search.php" method="POST">
+ 
+            <div class="form-group">
+                <input type="text" name="country" class="form-control" placeholder="Country to visit">
+            </div>
                 
-                <div class="form-group">
-
-                    <input type="month" name="date" class="form-control" min="2020-09" value="2020-10">
-                </div>
-                <div class="form-group">
-                    <button type="submit" name="submit" class="contactSendButton">Search</button>
-                </div>
-            </form>
+            <div class="form-group">
+                <input type="month" name="date" class="form-control" min="2020-09" value="2020-10">
+            </div>
+             
+            <div class="form-group">
+                <button type="submit" name="submit-search" class="contactSendButton">Search</button>
+            </div>
+        </form>
     </div>
         
        
@@ -145,20 +145,37 @@
 </section>
 
 <section class="offer-section" id="adventure">
-    <div class="align-content">
+    <div class="align-content-grid">
         <?php
         while($row=mysqli_fetch_array($query)){
         ?>
         
         <div class="offer" style="background-image: url(<?php echo substr($row['image'], 1, strlen($row['image'])) ?>); background-size: cover;">
             <div class="text-offer">
-                <h1><?php echo $row['title'];?></h1>
+                <h1><?php echo $row['title'];?>, <?php echo $row['country'];?></h1>
                 <h2><?php echo $row['time'];?></h2>
                 <h3><?php echo $row['price'];?> &euro;</h3>
             </div>
-            <form action="<?php echo "view.php?id=".$row['id']; ?>">
-            <input type="submit" class="contactSendButton view-button-offer_align" value="View" />
-            </form>
+            <?php 
+            if(isset($_SESSION['u_id'])){
+                echo "<div class='offers_buttons_position'>";
+            }else{
+                echo "<div class='offers_buttons_position' style='justify-content: flex-start;'>";
+            }     
+            ?>
+                <?php if(isset($_SESSION['u_id']))  
+                    echo '<div><a href="includes/editOffer.php?id='.$row['id'].'"><input type="submit" class="contactSendButton view-button-offer_align" value="Edit" /></a></div>';
+                ?>
+                <?php if(isset($_SESSION['u_id'])) {
+                    echo '<div><a href="viewOffer.php?id='.$row['id'].'"><input type="submit" class="contactSendButton view-button-offer_align" value="View" /></a></div>';
+                }else {
+                    echo '<div><a href="viewOffer.php?id='.$row['id'].'"><input type="submit" class="contactSendButton view-button-offer_align align-ifnot-logged" value="View" /></a></div>';
+                }
+                ?>
+            <?php if(isset($_SESSION['u_id']))  
+                    echo '<div><a href="includes/deleteOffer.php?id='.$row['id'].'"><input type="submit" class="contactSendButton view-button-offer_align" value="Delete" /></a></div>';
+                ?>
+            </div>
         </div>
     <?php } ?>
     </div>
