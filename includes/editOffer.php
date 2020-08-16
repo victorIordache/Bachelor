@@ -28,7 +28,7 @@ if(!isset($_POST['submit'])){
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../css/style.css">
-        <title></title>
+        <title>EOKA</title>
         <script src="https://kit.fontawesome.com/98e4273cd0.js" crossorigin="anonymous"></script>
         <script src="js/signupModifier.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

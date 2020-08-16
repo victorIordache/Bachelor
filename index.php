@@ -7,61 +7,52 @@
 
 <section class="search-section" id="home">
     <div class="align-content">
-
-       
-    <div class="search-div">
-        <h1>Where do you wanna travel?</h1>
-        <form class="search-form" action="search.php" method="POST">
- 
-            <div class="form-group">
-                <input type="text" name="country" class="form-control" placeholder="Country to visit">
-            </div>
-                
-            <div class="form-group">
-                <input type="month" name="date" class="form-control" min="2020-09" value="2020-10">
-            </div>
-             
-            <div class="form-group">
-                <button type="submit" name="submit-search" class="contactSendButton">Search</button>
-            </div>
-        </form>
-    </div>
-        
-       
-    <div class="slideshow middle">
-        <div class="slides">
-            <input type="radio" name="r" id="r1" checked>
-            <input type="radio" name="r" id="r2">
-            <input type="radio" name="r" id="r3">
-            <input type="radio" name="r" id="r4">
-            <input type="radio" name="r" id="r5">
-            <div class="slide s1">
-                <img src="images/barcelona.jpeg" alt="">
-            </div>
-            <div class="slide">
-                <img src="images/aurora.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="images/traveller.jpeg" alt="">
-            </div>
-            <div class="slide">
-                <img src="images/castlePeles.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="images/transfagarasan.jpg" alt="">
-            </div>
+        <div class="search-div">
+            <h1>Where do you wanna travel?</h1>
+            <form class="search-form" action="search.php" method="POST">
+                <div class="form-group">
+                    <input type="text" name="country" class="form-control" placeholder="Name a place or a country">
+                </div>
+                <div class="form-group">
+                    <input type="month" name="date" class="form-control" min="2020-09" value="2020-10">
+                </div>
+                <div class="form-group">
+                    <button type="submit" name="submit-search" class="contactSendButton">Search</button>
+                </div>
+            </form>
         </div>
-        
-        <div class="navigation">
-            <label for="r1" class="bar"></label>
-            <label for="r2" class="bar"></label>
-            <label for="r3" class="bar"></label>
-            <label for="r4" class="bar"></label>
-            <label for="r5" class="bar"></label>
-        </div>  
-    </div>
-      
+        <div class="slideshow middle">
+            <div class="slides">
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+                <input type="radio" name="r" id="r4">
+                <input type="radio" name="r" id="r5">
+                <div class="slide s1">
+                    <img src="images/barcelona.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/aurora.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/traveller.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/castlePeles.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/transfagarasan.jpg" alt="">
+                </div>
+            </div>
+            <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
+            </div>  
         </div>
+    </div>
 </section>
 
 <section class="section-parallax">
@@ -70,11 +61,8 @@
     </div>
 </section>
 
-
 <section class="moving-cards" id="explore">  
-    <div class="align-content">
-        
-        
+    <div class="align-content">     
         <div class="first-card card-middle">
             <div class="front">
                 <img src="images/aurora.jpeg" alt="">
@@ -84,10 +72,10 @@
                     <h2>Aurora Boreala, Porjus</h2>
                     <span>Sweden</span>
                     <div class="sm">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -101,10 +89,10 @@
                     <h2>Machu Picchu, Cusco</h2>
                     <span>Peru</span>
                     <div class="sm">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -118,18 +106,14 @@
                     <h2>Maui Beach House</h2>
                     <span>Oahu, Hawaii</span>
                     <div class="sm">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        
-        
-      
-        
     </div>
 </section>
 
